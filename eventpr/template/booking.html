@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %}
+    Booking
+{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        background-image: url('/static/images/login.jpg');
+        background-size: cover;
+        
+    }
+    .card {
+        width: 30rem;
+        margin: 0 auto; /* This centers the .card horizontally */
+        text-align: center; 
+        height :25rem;
+        margin-top: 60px;
+        padding: 50px;
+        background: rgba(248, 248, 248, 0.8);
+    }
+    .btn1 {
+        background-color: blueviolet;
+        border-radius: 5px;
+        height: 40px;
+        width: 80px;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .btn1:hover {
+        background-color: darkviolet;
+    }
+    .field input, .field select, .field textarea {
+        border-radius: 5px; /* Adds border-radius to the form fields */
+        padding: 8px;
+        border: 1px solid #ccc;
+        height: 40px;
+    }
+    
+</style>
+
+<body>
+    
+        <div class="card">
+            <h1 class="head" style="text-align: center;">Booking Form</h1>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="field">
+                    {{ form.as_p }}
+                </div>
+                <button type="submit" class="btn1">Book</button>
+            </form>
+        </div>
+    
+</body>
+{% endblock %}

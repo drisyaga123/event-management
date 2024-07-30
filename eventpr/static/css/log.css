@@ -1,0 +1,63 @@
+/* CSS for login form */
+body {
+  background-image: url('/static/images/login.jpg'); /* Path to your background image */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.title {
+  font-size: 34px;
+  justify-content: center;
+  margin-bottom: 20px; /* Add margin bottom */
+}
+
+.content {
+  background: rgba(248, 248, 248, 0.8); /* Adjust the alpha value for transparency */
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+
+.user-details {
+  margin-bottom: 20px;
+}
+
+.input-box {
+  margin-bottom: 10px;
+}
+
+.input-box label {
+  font-weight: bold;
+}
+
+.input-box input[type="text"],
+.input-box input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: blueviolet;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button input[type="submit"]:hover {
+  background-color: #0056b3;
+}
